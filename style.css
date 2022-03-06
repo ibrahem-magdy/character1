@@ -1,0 +1,347 @@
+body {
+    overflow-x: hidden;
+}
+
+.character {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+}
+
+.head {
+    width: 137px;
+    height: 185px;
+    border-radius: 50% 50% 48% 52% / 32% 30% 70% 68%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffccab;
+    opacity: 1;
+    border: 2px solid black;
+    z-index: 2;
+    box-shadow: 4px 2px rgb(0 0 0 / 20%) inset;
+
+}
+
+.hair-top {
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    background: brown;
+    border-radius: 50%;
+    box-shadow: 0px 3px black, 0 -3px rgb(171 84 84 / 50%) inset;
+
+    top: 57px;
+    left: 134px;
+    z-index: 8;
+}
+
+.hair-top div {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: brown;
+    border-radius: 50%;
+    box-shadow: 0px 3px black, 0 -3px rgb(171 84 84 / 50%) inset;
+}
+
+.hair-top div:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 23px;
+    top: -10px;
+}
+
+.hair-top div:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left: 40px;
+    top: -10px;
+    z-index: 1;
+}
+
+.hair-top div:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    left: 72px;
+    top: -13px;
+}
+
+.hair-top div:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    left: 89px;
+    top: -10px;
+}
+
+.hair-back div {
+    position: absolute;
+    top: 120px;
+    left: 118px;
+    width: 30px;
+    height: 30px;
+    background: brown;
+    border-radius: 50%;
+    box-shadow: -3px -2px black;
+    z-index: 1;
+}
+
+.hair-back div:nth-child(1) {
+    box-shadow: -3px 0px black;
+}
+
+.hair-back div:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    left: 98px;
+    top: 70px;
+}
+
+.hair-back div:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    left: 95px;
+    top: 32px;
+    z-index: 1;
+}
+
+.hair-back div:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    left: 127px;
+    top: 16px;
+}
+
+.hair-back div:nth-child(5) {
+    width: 80px;
+    height: 80px;
+    left: 152px;
+    top: 1px;
+    box-shadow: 1px -2px black;
+}
+
+.hair-back div:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    left: 147px;
+    top: 5px;
+    box-shadow: -1px -2px black;
+}
+
+.hair-back div:nth-child(7) {
+    width: 80px;
+    height: 80px;
+    left: 214px;
+    top: 15px;
+    box-shadow: 1px -3px black;
+}
+
+.hair-back div:nth-child(8) {
+    width: 80px;
+    height: 80px;
+    left: 215px;
+    top: 58px;
+    box-shadow: 3px 0px black;
+}
+
+.hair-back div:nth-child(9) {
+    width: 30px;
+    height: 30px;
+    left: 255px;
+    top: 124px;
+    box-shadow: 3px 0px black;
+}
+
+.eyes {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    /*background: yellow;*/
+    width: 94%;
+    height: 49px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eye {
+    width: 40px;
+    height: 100%;
+    background: white;
+    position: relative;
+    border-radius: 100% /100% 60% 15% 20%;
+    box-shadow: 0 0vmin 0 1vmin #ffccab, -0.25vmin -2.5vmin;
+    border: 1px solid black;
+}
+
+.ball-lg {
+    width: 25px;
+    height: 25px;
+    background: rgb(99, 111, 226);
+    position: absolute;
+    top: 65%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.eye:nth-child(2) {
+    /* transform: skew(-2deg); */
+    left: -3px;
+    top: -1px;
+}
+
+.eye:nth-child(2) .ball-lg {
+    left: 43%;
+}
+
+.ball-sm {
+    width: 12px;
+    height: 12px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.ball-light {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+
+    top: 16%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.nose {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 61%;
+    left: 44%;
+}
+
+.nose:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 38px;
+    background-color: #ffccab;
+    left: 4px;
+    transform: rotate(-62deg);
+}
+
+.mouth {
+    position: absolute;
+    width: 83px;
+    height: 95px;
+    top: 34%;
+    left: 22%;
+    border: 1px solid black;
+    border-color: transparent transparent black;
+    border-radius: 50px;
+}
+
+.nick {
+    width: 56px;
+    height: 39px;
+    background: #ffccab;
+    position: absolute;
+    top: 77%;
+    left: 43%;
+    z-index: 1;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.right-ear,
+.left-ear {
+    width: 32px;
+    height: 66px;
+    border: 2px solid black;
+    border-radius: 20px 0 0 20px;
+    top: 45%;
+    position: absolute;
+    left: 29%;
+    transform: rotate(-26deg);
+    z-index: 0;
+    overflow: hidden;
+    background: #ffccab;
+}
+
+.left-ear {
+    right: 29%;
+    left: auto;
+    transform: rotate(205deg);
+}
+
+.lines {
+    width: 100px;
+    height: 43px;
+    border: 1px solid black;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    border-radius: 20px;
+}
+
+.lines::after {
+    content: "";
+    position: absolute;
+    background-color: #ffccab;
+    width: 11px;
+    height: 18px;
+    top: 11px;
+    left: -4px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 3px;
+    top: 35%;
+}
+
+.body {
+    width: 59px;
+    height: 243px;
+    position: absolute;
+    left: 43%;
+    top: 57%;
+    background: #bb0000;
+    border: 2px solid black;
+    border-radius: 50%;
+    transform: rotate(91deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chest {
+    width: 80px;
+    height: 80px;
+    background-color: #ffccab;
+    border-radius: 50%;
+    border: 2px solid black;
+    top: 2px;
+    position: relative;
+    left: -28px;
+    z-index: 0;
+}
